@@ -14,7 +14,7 @@ matrix:
       dist: trusty
       sudo: required
       group: deprecated-2017Q3
-      install: ./ci/install-platformio.sh && ./ci/log-config.sh
+      install: ./ci/install-platformio.sh
       script: ./ci/build-platformio.sh      
     - os: linux
       compiler: gcc
