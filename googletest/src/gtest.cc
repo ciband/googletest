@@ -4514,6 +4514,7 @@ class ScopedPrematureExitFile {
   }
 
   ~ScopedPrematureExitFile() {
+    #if !defined GTEST_OS_ESP8266
     if (!premature_exit_filepath_.empty()) {
       int retval = remove(premature_exit_filepath_.c_str());
       if (retval) {
@@ -4522,6 +4523,7 @@ class ScopedPrematureExitFile {
                           << retval;
       }
     }
+    #endif
   }
 
  private:
