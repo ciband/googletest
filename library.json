@@ -34,7 +34,10 @@
             "googletest/src/gtest-all.cc",
             "googletest/src/gtest_main.cc",
             "googletest/test",
-            "googletest/CMakeLists.txt"
+            "googletest/xcode",
+            "googletest/CMakeLists.txt",
+            "googletest/Makefile.am",
+            "googletest/configure.ac"
           ]
   },
   "build": {
