@@ -106,6 +106,8 @@
 #define GTEST_OS_ESP8266 1
 #elif defined ESP32
 #define GTEST_OS_ESP32 1
+#elif defined ARDUINO_ARCH_SAMD
+#define GTEST_OS_ATMEL_SAMD 1
 #endif  // __CYGWIN__
 
 #endif  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_
